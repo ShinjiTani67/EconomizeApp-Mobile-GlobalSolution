@@ -15,17 +15,11 @@ class LoginFragment : Fragment() {
         super.onCreate(savedInstanceState)
         }
 
-
     override fun onCreateView(
-
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
-
-        _binding = LoginFragment.inflate(inflater, container, false)
-
-        return binding.root
+        return inflater.inflate(R.layout.fragment_sign_up, container, false)
     }
 
     override fun onDestroyView() {
