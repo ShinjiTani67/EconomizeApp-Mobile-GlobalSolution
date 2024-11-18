@@ -32,6 +32,9 @@ class LoginFragment : Fragment() {
             val email = binding.Emailedittext.text.toString()
             val password = binding.senhaedittext.text.toString()
 
+            // validação feita pelo firebase
+
+
             //if (email.isEmpty() || password.isEmpty()) {
               //  binding.errorTextView.text = "E-mail e senha são obrigatórios!"
                 //binding.errorTextView.visibility = View.VISIBLE
