@@ -62,7 +62,7 @@
         android:id="@+id/Senhatitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/senha_name"
+        android:text="@string/gasto_name"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="420dp" />
 

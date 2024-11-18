@@ -11,4 +11,5 @@
     <string name="nome_name">Nome</string>
     <string name="confirmar_name">Confirmar</string>
     <string name="enviar_name">Enviar</string>
+    <string name="gasto_name">Gastos</string>
 </resources>
