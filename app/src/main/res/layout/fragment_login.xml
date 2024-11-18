@@ -17,14 +17,6 @@
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="359dp" />
 
-    <Button
-        android:id="@+id/Loginbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_name"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="603dp" />
-
     <TextView
         android:id="@+id/Senhatitle"
         android:layout_width="wrap_content"
@@ -74,6 +66,18 @@
         android:layout_height="wrap_content"
         android:text="@string/esqueceu_name"
         tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="544dp" />
+        tools:layout_editor_absoluteY="551dp" />
+
+    <Button
+        android:id="@+id/Loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
