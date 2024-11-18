@@ -73,7 +73,7 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="359dp" />
+        tools:layout_editor_absoluteY="426dp" />
 
     <EditText
         android:id="@+id/Confirmemailedittext"
@@ -81,8 +81,8 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="437dp" />
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="497dp" />
 
     <EditText
         android:id="@+id/Senhaedittext"
