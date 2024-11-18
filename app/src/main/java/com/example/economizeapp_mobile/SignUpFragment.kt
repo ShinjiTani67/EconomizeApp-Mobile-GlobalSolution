@@ -5,11 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.economizeapp_mobile.databinding.FragmentHomeBinding
+import com.example.economizeapp_mobile.databinding.FragmentSignUpBinding
 
 
 class SignUpFragment : Fragment() {
 
-    private var _binding : SignUpFragment? = null
+    private var _binding: FragmentSignUpBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
