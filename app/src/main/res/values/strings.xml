@@ -8,4 +8,6 @@
     <string name="confirmarsenha_name">Confirme a Senha</string>
     <string name="confirmaremail_name">Confirme o email</string>
     <string name="endereco_name">Endereço</string>
-    <string name="noem_name">Nome</stringname>
+    <string name="nome_name">Nome</string>
+    <string name="confirmar_name">Confirmar</string>
+</resources>
