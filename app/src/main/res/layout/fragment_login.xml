@@ -7,14 +7,6 @@
     tools:context=".LoginFragment">
 
 
-    <Button
-        android:id="@+id/Loginbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_name"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="586dp" />
-
     <EditText
         android:id="@+id/Emailtext"
         android:layout_width="295dp"
@@ -22,15 +14,23 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="383dp" />
+        tools:layout_editor_absoluteY="359dp" />
 
-    <TextView
-        android:id="@+id/Emailtitle"
+    <Button
+        android:id="@+id/Loginbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/email_name"
+        android:text="@string/login_name"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+    <TextView
+        android:id="@+id/Senhatitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senha_name"
         tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="461dp" />
+        tools:layout_editor_absoluteY="323dp" />
 
     <EditText
         android:id="@+id/Senhatext"
@@ -39,15 +39,15 @@
         android:ems="10"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="489dp" />
+        tools:layout_editor_absoluteY="465dp" />
 
     <TextView
-        android:id="@+id/Senhatitle"
+        android:id="@+id/Emailtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/senha_name"
+        android:text="@string/email_name"
         tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="347dp" />
+        tools:layout_editor_absoluteY="461dp" />
 
     <TextView
         android:id="@+id/Logotitle"
@@ -64,5 +64,13 @@
         android:text="@string/login_name"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="261dp" />
+
+    <TextView
+        android:id="@+id/esqueceusenha_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/esqueceu_name"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="544dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
