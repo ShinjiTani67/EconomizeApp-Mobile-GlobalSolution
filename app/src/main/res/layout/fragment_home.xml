@@ -31,7 +31,6 @@
         android:layout_width="298dp"
         android:layout_height="48dp"
         android:ems="10"
-        android:text="@string/senha_name"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="452dp" />
 
@@ -48,7 +47,6 @@
         android:layout_width="298dp"
         android:layout_height="48dp"
         android:ems="10"
-        android:inputType="textPassword"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="552dp" />
 
