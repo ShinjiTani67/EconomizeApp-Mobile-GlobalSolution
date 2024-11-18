@@ -67,7 +67,7 @@
         tools:layout_editor_absoluteY="452dp" />
 
     <EditText
-        android:id="@+id/Senhaedittext"
+        android:id="@+id/gastosedittext"
         android:layout_width="295dp"
         android:layout_height="48dp"
         android:ems="10"

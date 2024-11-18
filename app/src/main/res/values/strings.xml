@@ -13,4 +13,6 @@
     <string name="enviar_name">Enviar</string>
     <string name="gasto_name">Gastos em kWh</string>
     <string name="pagamento_name">Quanto foi pago</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
