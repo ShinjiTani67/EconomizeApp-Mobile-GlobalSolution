@@ -24,6 +24,48 @@
         android:layout_height="265dp"
         android:src="@drawable/send_file"
         tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="135dp" />
+        tools:layout_editor_absoluteY="108dp" />
+
+    <TextView
+        android:id="@+id/Senhatitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senha_name"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="533dp" />
+
+    <EditText
+        android:id="@+id/Senhaedittext"
+        android:layout_width="298dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="465dp" />
+
+    <TextView
+        android:id="@+id/Senhatitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senha_name"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <EditText
+        android:id="@+id/Senhaedittext"
+        android:layout_width="298dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <Button
+        android:id="@+id/enviarbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar_name"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="627dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
