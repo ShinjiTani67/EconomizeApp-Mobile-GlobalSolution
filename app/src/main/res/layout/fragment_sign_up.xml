@@ -29,7 +29,7 @@
         android:id="@+id/Nometitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/noem_name"
+        android:text="@string/nome_name"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="135dp" />
 
@@ -46,7 +46,6 @@
         android:layout_width="295dp"
         android:layout_height="48dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="165dp" />
 
@@ -64,7 +63,6 @@
         android:layout_width="295dp"
         android:layout_height="48dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="452dp" />
 
@@ -73,7 +71,6 @@
         android:layout_width="295dp"
         android:layout_height="48dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="263dp" />
 
@@ -90,7 +87,6 @@
         android:layout_width="295dp"
         android:layout_height="48dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="563dp" />
 
