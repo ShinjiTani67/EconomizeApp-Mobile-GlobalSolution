@@ -24,6 +24,26 @@ class LoginFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_sign_up, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        binding.Loginbutton.setOnClickListener {
+            val email = binding.Emailedittext.text.toString()
+            val password = binding.senhaedittext.text.toString()
+
+            //if (email.isEmpty() || password.isEmpty()) {
+              //  binding.errorTextView.text = "E-mail e senha são obrigatórios!"
+                //binding.errorTextView.visibility = View.VISIBLE
+            //} else if (!isValidEmail(email)) {
+              //  binding.errorTextView.text = "E-mail inválido!"
+                //binding.errorTextView.visibility = View.VISIBLE
+            //} else {
+                //binding.errorTextView.visibility = View.GONE
+                //performLogin(email, password)
+            }
+        }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

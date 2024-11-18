@@ -15,7 +15,7 @@
         android:layout_marginBottom="58dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/gastosedittext"
+        app:layout_constraintBottom_toTopOf="@+id/senhaedittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.989" />
 
     <EditText
-        android:id="@+id/gastosedittext"
+        android:id="@+id/senhaedittext"
         android:layout_width="308dp"
         android:layout_height="58dp"
         android:layout_marginBottom="212dp"
@@ -41,7 +41,7 @@
         android:layout_marginTop="23dp"
         android:layout_marginBottom="17dp"
         android:text="@string/senha_name"
-        app:layout_constraintBottom_toTopOf="@+id/gastosedittext"
+        app:layout_constraintBottom_toTopOf="@+id/senhaedittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
