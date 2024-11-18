@@ -11,51 +11,72 @@
         android:id="@+id/Logotitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="27dp"
         android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/imageFilterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterButton
         android:id="@+id/imageFilterButton"
         android:layout_width="255dp"
         android:layout_height="265dp"
         android:src="@drawable/send_file"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
 
     <EditText
         android:id="@+id/gastosedittext"
         android:layout_width="298dp"
         android:layout_height="48dp"
         android:ems="10"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
 
     <Button
         android:id="@+id/enviarbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="52dp"
         android:text="@string/enviar_name"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="623dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagoeditext" />
 
     <EditText
         android:id="@+id/pagoeditext"
         android:layout_width="298dp"
         android:layout_height="48dp"
         android:ems="10"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="552dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828" />
 
     <TextView
         android:id="@+id/pagamentotitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pagamento_name"
-        tools:layout_editor_absoluteX="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="520dp" />
 
     <TextView
@@ -63,7 +84,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gasto_name"
-        tools:layout_editor_absoluteX="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="420dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
