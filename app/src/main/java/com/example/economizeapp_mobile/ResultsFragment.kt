@@ -19,7 +19,6 @@ class ResultsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_results, container, false)
     }
     override fun onDestroy(){
