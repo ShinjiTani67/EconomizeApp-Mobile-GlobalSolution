@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.economizeapp_mobile.databinding.FragmentHomeBinding
 import com.example.economizeapp_mobile.databinding.FragmentSignUpBinding
 
 
@@ -30,7 +29,7 @@ class SignUpFragment : Fragment() {
 
         binding.confirmarbtn.setOnClickListener {
             val nome = binding.nomeEditText.text.toString()
-            val email = binding.emailedittext.text.toString()
+            val email = binding.emailEditText.text.toString()
             val senha = binding.senhaEditText.text.toString()
             val confirmasenha = binding.confirmaSenhaEditText.text.toString()
 

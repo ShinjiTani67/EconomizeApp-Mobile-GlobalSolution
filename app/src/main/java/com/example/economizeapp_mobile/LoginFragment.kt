@@ -34,7 +34,6 @@ class LoginFragment : Fragment() {
 
             // validação feita pelo firebase
 
-
             //if (email.isEmpty() || password.isEmpty()) {
               //  binding.errorTextView.text = "E-mail e senha são obrigatórios!"
                 //binding.errorTextView.visibility = View.VISIBLE
