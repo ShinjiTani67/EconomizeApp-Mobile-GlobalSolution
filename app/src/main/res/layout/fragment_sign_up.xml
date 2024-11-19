@@ -48,7 +48,7 @@
         android:layout_marginTop="168dp"
         android:layout_marginBottom="48dp"
         android:ems="10"
-        app:layout_constraintBottom_toTopOf="@+id/emailedittext"
+        app:layout_constraintBottom_toTopOf="@+id/senhaEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,13 +61,13 @@
         android:layout_marginBottom="52dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/senhaEditText"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/senhaEditText"
+        android:id="@+id/emailEditText"
         android:layout_width="295dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -77,7 +77,7 @@
         tools:layout_editor_absoluteY="462dp" />
 
     <EditText
-        android:id="@+id/emailedittext"
+        android:id="@+id/senhaEditText"
         android:layout_width="295dp"
         android:layout_height="48dp"
         android:layout_marginBottom="56dp"
@@ -98,7 +98,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailedittext" />
+        app:layout_constraintTop_toBottomOf="@+id/senhaEditText" />
 
     <EditText
         android:id="@+id/confirmaSenhaEditText"
@@ -111,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senhaEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
         app:layout_constraintVertical_bias="0.631" />
 
     <TextView
@@ -125,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senhaEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -135,7 +135,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="13dp"
         android:text="@string/email_name"
-        app:layout_constraintBottom_toTopOf="@+id/emailedittext"
+        app:layout_constraintBottom_toTopOf="@+id/senhaEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +149,7 @@
         android:layout_marginTop="13dp"
         android:layout_marginBottom="18dp"
         android:text="@string/senha_name"
-        app:layout_constraintBottom_toTopOf="@+id/senhaEditText"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"

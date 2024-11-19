@@ -29,8 +29,8 @@ class LoginFragment : Fragment() {
 
 
         binding.Loginbutton.setOnClickListener {
-            val email = binding.Emailedittext.text.toString()
-            val password = binding.senhaedittext.text.toString()
+            val email = binding.emailEditText.text.toString()
+            val password = binding.senhaEditText.text.toString()
 
             // validação feita pelo firebase
 
