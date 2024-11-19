@@ -7,6 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.economizeapp_mobile.databinding.FragmentResultsBinding
 
+
+//todo abrir quando calcular no home
+
 class ResultsFragment : Fragment() {
 
     private var _binding : FragmentResultsBinding? = null
@@ -24,6 +27,7 @@ class ResultsFragment : Fragment() {
 
         _binding = FragmentResultsBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

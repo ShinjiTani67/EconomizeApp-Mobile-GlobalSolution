@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.economizeapp_mobile.databinding.FragmentHomeBinding
 import com.example.economizeapp_mobile.databinding.FragmentLoginBinding
 
@@ -30,6 +31,9 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.CasonaotenhaloginTitle.setOnClickListener {
+            findNavController().navigate(R.id.fragment_sign_up)
+        }
 
         binding.Loginbutton.setOnClickListener {
             val email = binding.emailEditText.text.toString()
