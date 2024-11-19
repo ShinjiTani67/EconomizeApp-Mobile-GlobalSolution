@@ -15,7 +15,7 @@
         android:layout_marginBottom="58dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/senhaEditText"
+        app:layout_constraintBottom_toTopOf="@+id/gastosEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"

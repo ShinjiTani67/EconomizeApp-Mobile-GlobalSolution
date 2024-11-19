@@ -13,8 +13,8 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    val kwhEditText = binding.gastosedittext
-    val gastosEditText = binding.pagoeditext
+    val kwhEditText = binding.gastosEditText
+    val gastosEditText = binding.pagoEditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +31,6 @@ class HomeFragment : Fragment() {
         return binding.root
 
     }
-
     override fun onDestroy(){
         super.onDestroy()
         _binding = null

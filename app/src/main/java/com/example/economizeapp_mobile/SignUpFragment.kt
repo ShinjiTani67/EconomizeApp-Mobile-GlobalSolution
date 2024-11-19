@@ -30,6 +30,7 @@ class SignUpFragment : Fragment() {
         binding.confirmarbtn.setOnClickListener {
             val nome = binding.nomeEditText.text.toString()
             val email = binding.emailEditText.text.toString()
+            val confirmaemail = binding.confrimaemailedittext.text.toString()
             val senha = binding.senhaEditText.text.toString()
             val confirmasenha = binding.confirmaSenhaEditText.text.toString()
 
