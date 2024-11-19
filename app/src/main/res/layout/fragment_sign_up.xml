@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout2"
+    android:id="@+id/fragment_sign_up"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUpFragment">
@@ -32,85 +32,129 @@
         app:layout_constraintVertical_bias="0.127" />
 
     <TextView
-        android:id="@+id/Nometitle"
+        android:id="@+id/nomeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
         android:text="@string/nome_name"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cadastrotitle" />
+
+    <EditText
+        android:id="@+id/nomeEditText"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/emailedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/confrimaemailedittext"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/senhaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/senhaEditText"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <EditText
+        android:id="@+id/emailedittext"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/confrimaemailedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/confirmeEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/confirmaremail_name"
+        app:layout_constraintBottom_toTopOf="@+id/confrimaemailedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailedittext" />
+
+    <EditText
+        android:id="@+id/confirmaSenhaEditText"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/confirmarbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senhaEditText"
+        app:layout_constraintVertical_bias="0.631" />
 
     <TextView
         android:id="@+id/Senhatitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="23dp"
         android:text="@string/confirmarsenha_name"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="521dp" />
-
-    <EditText
-        android:id="@+id/Confirmesenhaedittext"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <EditText
-        android:id="@+id/Confirmesenhatitle"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="354dp" />
-
-    <EditText
-        android:id="@+id/Emailedittext"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="452dp" />
-
-    <EditText
-        android:id="@+id/senhaedittext"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="263dp" />
-
-    <TextView
-        android:id="@+id/Confirmeemailtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/confirmaremail_name"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="322dp" />
-
-    <EditText
-        android:id="@+id/Confirmemailedittext"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="563dp" />
+        app:layout_constraintBottom_toTopOf="@+id/confirmaSenhaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senhaEditText"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/Emailtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="13dp"
         android:text="@string/email_name"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintBottom_toTopOf="@+id/emailedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeEditText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Senhaname_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="18dp"
         android:text="@string/senha_name"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="415dp" />
+        app:layout_constraintBottom_toTopOf="@+id/senhaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confrimaemailedittext"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/confirmarbtn"
@@ -122,5 +166,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928" />
+        app:layout_constraintVertical_bias="0.953" />
 </androidx.constraintlayout.widget.ConstraintLayout>
