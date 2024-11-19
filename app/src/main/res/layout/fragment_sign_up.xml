@@ -8,121 +8,148 @@
     tools:context=".SignUpFragment">
 
     <TextView
-        android:id="@+id/Logotitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="38dp" />
-
-    <TextView
         android:id="@+id/Cadastrotitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
         android:text="@string/cadastro_name"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nomeTitle"
+        android:id="@+id/Logotitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nome_name"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="138dp" />
+        android:layout_marginTop="36dp"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nomeEditText"
         android:layout_width="295dp"
         android:layout_height="48dp"
+        android:layout_marginTop="160dp"
         android:ems="10"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <EditText
-        android:id="@+id/confrimaemailedittext"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="362dp" />
-
-    <EditText
-        android:id="@+id/senhaEditText"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="462dp" />
-
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="258dp" />
-
-    <TextView
-        android:id="@+id/confirmeEmailTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/confirmaremail_name"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="325dp" />
-
-    <EditText
-        android:id="@+id/confirmaSenhaEditText"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="578dp" />
-
-    <TextView
-        android:id="@+id/Senhatitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="23dp"
-        android:text="@string/confirmarsenha_name"
-        app:layout_constraintBottom_toTopOf="@+id/confirmaSenhaEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintHorizontal_bias="0.344"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Emailtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
         android:text="@string/email_name"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="@string/nome_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="260dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/confrimaemailedittext"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="364dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/senhaEditText"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="460dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/confirmeEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:text="@string/confirmaremail_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/confirmaSenhaEditText"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="560dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Senhatitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:text="@string/confirmarsenha_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Senhaname_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="424dp"
         android:text="@string/senha_name"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="423dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/confirmarbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="648dp"
         android:text="@string/confirmar_name"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
