@@ -37,10 +37,12 @@ class HomeFragment : Fragment() {
 
         binding.enviarbtn.setOnClickListener {
 
-            val result = calculoEficiencia(
-                binding.gastosEditText.text.toString(),
-                binding.pagoEditText.text.toString()
-            )
+            //todo fazer o calculoEficiencia
+
+            //val result = calculoEficiencia(
+                //binding.gastosEditText.text.toString(),
+                //binding.pagoEditText.text.toString()
+            //)
 
             // Exibir o resultado
             // abre o result fragment
