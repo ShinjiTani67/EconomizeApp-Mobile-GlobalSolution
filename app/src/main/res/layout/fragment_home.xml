@@ -11,75 +11,48 @@
         android:id="@+id/Logotitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginBottom="76dp"
         android:text="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/gastostitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="52dp" />
 
     <TextView
         android:id="@+id/gastostitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gasto_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207" />
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="147dp" />
 
     <EditText
         android:id="@+id/gastosEditText"
         android:layout_width="298dp"
         android:layout_height="48dp"
         android:ems="10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.389"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="190dp" />
 
     <EditText
         android:id="@+id/pagoEditText"
         android:layout_width="298dp"
         android:layout_height="48dp"
         android:ems="10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.389"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="298dp" />
 
     <Button
         android:id="@+id/enviarbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="52dp"
         android:text="@string/enviar_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pagoEditText"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="376dp" />
 
     <TextView
         android:id="@+id/pagamentotitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pagamento_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="256dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
