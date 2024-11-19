@@ -44,8 +44,10 @@ class HomeFragment : Fragment() {
                 //binding.pagoEditText.text.toString()
             //)
 
-            // Exibir o resultado
+            // todo Exibir o resultado
             // abre o result fragment
+
+            // devolve uma estimativa de 10 meses
         }
     }
 
