@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.economizeapp_mobile.databinding.FragmentResultsBinding
 
 class ResultsFragment : Fragment() {
+
     private var _binding : FragmentResultsBinding? = null
     private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
