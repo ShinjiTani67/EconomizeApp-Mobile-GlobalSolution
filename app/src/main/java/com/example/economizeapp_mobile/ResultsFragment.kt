@@ -20,6 +20,15 @@ class ResultsFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_results, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        
+        val result = arguments?.getString("calculationResult") ?: "Resultado não encontrado"
+
+        binding.resultTextView.text = result
+    }
+
     override fun onDestroy(){
         super.onDestroy()
         _binding = null

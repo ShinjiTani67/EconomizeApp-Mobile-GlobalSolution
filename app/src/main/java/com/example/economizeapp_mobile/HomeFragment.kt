@@ -13,8 +13,8 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    val kwhEditText = binding.gastosEditText
-    val gastosEditText = binding.pagoEditText
+    //val kwhEditText = binding.gastosEditText
+    //val gastosEditText = binding.pagoEditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +31,22 @@ class HomeFragment : Fragment() {
         return binding.root
 
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.enviarbtn.setOnClickListener {
+
+            val result = calculoEficiencia(
+                binding.gastosEditText.text.toString(),
+                binding.pagoEditText.text.toString()
+            )
+
+            // Exibir o resultado
+            // abre o result fragment
+        }
+    }
+
     override fun onDestroy(){
         super.onDestroy()
         _binding = null
