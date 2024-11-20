@@ -9,7 +9,7 @@ import com.example.economizeapp_mobile.databinding.FragmentSignUpBinding
 
 //todo fazer com que o "não tem login" abra aqui
 
-//teste do commit
+//teste de commit
 class SignUpFragment : Fragment() {
 
     private var _binding: FragmentSignUpBinding? = null
