@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.economizeapp_mobile.databinding.FragmentHomeBinding
 import com.example.economizeapp_mobile.databinding.FragmentLoginBinding
@@ -34,7 +36,13 @@ class LoginFragment : Fragment() {
         binding.CasonaotenhaloginTitle.setOnClickListener {
             findNavController().navigate(R.id.fragment_sign_up)
         }
+        val textView: TextView = view.findViewById(R.id.Esqueceusenha_title)
 
+
+        textView.setOnClickListener {
+
+            Toast.makeText(requireContext(), "Email para a troca de senha enviado", Toast.LENGTH_SHORT).show()
+        }
         binding.Loginbutton.setOnClickListener {
             val email = binding.emailEditText.text.toString()
             val password = binding.senhaEditText.text.toString()

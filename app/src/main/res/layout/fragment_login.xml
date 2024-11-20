@@ -95,6 +95,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="564dp"
         android:text="@string/esqueceu_name"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
