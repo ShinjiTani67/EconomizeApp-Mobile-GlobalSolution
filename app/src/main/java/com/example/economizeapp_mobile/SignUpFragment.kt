@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import com.example.economizeapp_mobile.databinding.FragmentSignUpBinding
 
 //todo fazer com que o "não tem login" abra aqui
+
+//teste do commit
 class SignUpFragment : Fragment() {
 
     private var _binding: FragmentSignUpBinding? = null
