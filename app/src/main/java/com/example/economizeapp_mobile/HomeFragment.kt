@@ -55,11 +55,6 @@ class HomeFragment : Fragment() {
                 val kwhEm10Meses = kwh * 10
                 val gastoEm10Meses = gasto * 10
 
-                val resultado = """
-                    Consumo em 10 meses: $kwhEm10Meses kWh
-                    Gasto em 10 meses: R$ $gastoEm10Meses
-                """.trimIndent()
-
                 val action = HomeFragmentDirections.actionHomeFragmentToResultFragment(
                     resultadoKwh = "Consumo em 10 meses: $kwhEm10Meses kWh",
                     resultadoGastos = "Gasto em 10 meses: R$ $gastoEm10Meses"

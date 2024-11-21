@@ -49,7 +49,41 @@ class LoginFragment : Fragment() {
         binding.CasonaotenhaloginTitle.setOnClickListener {
             findNavController().navigate(R.id.fragment_sign_up)
         }
-        val textView: TextView = view.findViewById(R.id.Esqueceusenha_title)
+        binding.EsqueceusenhaTitle.setOnClickListener {
+            sendPasswordResetEmail()
+        }
+
+        binding.Loginbutton.setOnClickListener {
+            doLogin()
+        }
+    }
+
+    private fun sendPasswordResetEmail() = lifecycleScope.launch {
+        val email = binding.emailEditText.text.toString().trim()
+
+        if (email.isEmpty()) {
+            Toast.makeText(
+                requireContext(),
+                "Por favor, insira o email cadastrado.",
+                Toast.LENGTH_SHORT
+            ).show()
+            return@launch
+        }
+
+        try {
+            auth.sendPasswordResetEmail(email).await()
+            Toast.makeText(
+                requireContext(),
+                "Enviamos o email de confirmação para $email.",
+                Toast.LENGTH_LONG
+            ).show()
+        } catch (ex: Exception) {
+            Toast.makeText(
+                requireContext(),
+                ex.message ?: "Erro ao enviar o email de redefinição.",
+                Toast.LENGTH_LONG
+            ).show()
+        }
 
         binding.Loginbutton.setOnClickListener {
             doLogin()
