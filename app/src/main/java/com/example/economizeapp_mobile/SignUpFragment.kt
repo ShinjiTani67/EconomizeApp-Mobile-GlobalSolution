@@ -5,8 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.example.economizeapp_mobile.databinding.FragmentSignUpBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.userProfileChangeRequest
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
 
 class SignUpFragment : Fragment() {
     private lateinit var auth: FirebaseAuth
@@ -30,26 +36,43 @@ class SignUpFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.confirmarbtn.setOnClickListener {
-            val nome = binding.nomeEditText.text.toString()
-            val email = binding.emailEditText.text.toString()
-            val confirmaemail = binding.confrimaemailedittext.text.toString()
-            val senha = binding.senhaEditText.text.toString()
-            val confirmasenha = binding.confirmaSenhaEditText.text.toString()
+            createAccount()
+        }
+    }
 
+    private fun createAccount() {
+        val name = binding.nomeEditText.text.toString()
+        val email = binding.nomeEditText.text.toString()
+        val password = binding.senhaEditText.text.toString()
 
-            //when {
-              //  nome.isEmpty() -> showMessage("O nome é obrigatório!", true)
-                //email.isEmpty() -> showMessage("O e-mail é obrigatório!", true)
-                //!isValidEmail(email) -> showMessage("Por favor, insira um e-mail válido!", true)
-                //senha.isEmpty() -> showMessage("A senha é obrigatória!", true)
-                //senha.length < 6 -> showMessage("A senha deve ter no mínimo 6 caracteres!", true)
-                //senha != confirmPassword -> showMessage("As senhas não coincidem!", true)
-                //else -> {
+        lifecycleScope.launch {
+            try {
+                val result = auth.createUserWithEmailAndPassword(email, password).await()
+                val currentUser = result.user
 
+                if (currentUser != null) {
+                    val profileRequest = userProfileChangeRequest {
+                        displayName = name
+                    }
+                    currentUser.updateProfile(profileRequest).await()
+                    findNavController().navigate(R.id.fragment_home)
 
-                    //showMessage("Cadastro realizado com sucesso!", false)
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        "Não foi possível criar sua conta",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
+            } catch (ex: Exception) {
+                Toast.makeText(
+                    requireContext(),
+                    ex.message,
+                    Toast.LENGTH_LONG
+                ).show()
             }
+        }
+    }
 
     override fun onDestroy(){
         super.onDestroy()
