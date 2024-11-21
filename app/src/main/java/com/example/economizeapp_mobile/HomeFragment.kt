@@ -7,10 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.example.economizeapp_mobile.databinding.FragmentHomeBinding
+import com.google.firebase.auth.FirebaseAuth
 
 
 class HomeFragment : Fragment() {
 
+    private lateinit var auth: FirebaseAuth
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
