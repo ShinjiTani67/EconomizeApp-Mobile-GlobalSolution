@@ -43,7 +43,9 @@ class SignUpFragment : Fragment() {
     private fun createAccount() {
         val name = binding.nomeEditText.text.toString()
         val email = binding.nomeEditText.text.toString()
+        val confirmEmail = binding.confrimaemailedittext.text.toString().trim()
         val password = binding.senhaEditText.text.toString()
+        val confirmPassword = binding.confirmaSenhaEditText.text.toString().trim()
 
         lifecycleScope.launch {
             try {
@@ -56,6 +58,14 @@ class SignUpFragment : Fragment() {
                     }
                     currentUser.updateProfile(profileRequest).await()
                     findNavController().navigate(R.id.fragment_home)
+
+                    if (email != confirmEmail) {
+                        Toast.makeText(requireContext(), "Os emails não correspondem", Toast.LENGTH_LONG).show()
+                    }
+
+                    if (password != confirmPassword) {
+                        Toast.makeText(requireContext(), "As senhas não correspondem", Toast.LENGTH_LONG).show()
+                    }
 
                 } else {
                     Toast.makeText(
