@@ -60,7 +60,7 @@ class HomeFragment : Fragment() {
                     Gasto em 10 meses: R$ $gastoEm10Meses
                 """.trimIndent()
 
-                val action = FragmentHomeBinding.actionHomeFragmentToResultFragment(resultado)
+                val action = HomeFragmentDirections.actionHomeFragmentToResultFragment(resultado)
                 findNavController().navigate(action)
 
             } catch (e: NumberFormatException) {
