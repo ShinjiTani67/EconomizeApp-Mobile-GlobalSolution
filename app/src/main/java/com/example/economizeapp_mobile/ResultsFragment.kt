@@ -36,7 +36,7 @@ class ResultsFragment : Fragment() {
 
         val resultado = arguments?.getString("calculationResult") ?: "Resultado não encontrado"
 
-        binding.resultadoTextView.text = resultado
+        binding.resultadokwhTextView.text = resultado
     }
 
     override fun onDestroy(){

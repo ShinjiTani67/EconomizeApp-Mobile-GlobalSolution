@@ -20,12 +20,29 @@
         app:layout_constraintVertical_bias="0.064" />
 
     <TextView
-        android:id="@+id/resultadoTextView"
+        android:id="@+id/resultadokwhTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resultado:"
+        android:text="@string/kwhEm10Meses_name"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="98dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/resultadogastosTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gastosEm10Meses_name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
