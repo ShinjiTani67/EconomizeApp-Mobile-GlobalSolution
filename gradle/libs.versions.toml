@@ -11,9 +11,10 @@ activity = "1.9.3"
 constraintlayout = "2.2.0"
 navVersion = "2.8.4"
 retrofit = "2.11.0"
-navigationFragment = "2.7.7"
+navigationFragment = "2.4.2"
 gms = "4.4.2"
 firebase = "33.5.1"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
