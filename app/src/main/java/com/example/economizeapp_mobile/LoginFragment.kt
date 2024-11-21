@@ -7,10 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.economizeapp_mobile.databinding.FragmentHomeBinding
 import com.example.economizeapp_mobile.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
 
 class LoginFragment : Fragment() {
 
@@ -48,28 +51,41 @@ class LoginFragment : Fragment() {
         }
         val textView: TextView = view.findViewById(R.id.Esqueceusenha_title)
 
-
-        textView.setOnClickListener {
-
-            Toast.makeText(requireContext(), "Email para a troca de senha enviado", Toast.LENGTH_SHORT).show()
-        }
         binding.Loginbutton.setOnClickListener {
-            val email = binding.emailEditText.text.toString()
-            val password = binding.senhaEditText.text.toString()
-
-            // validação feita pelo firebase
-
-            //if (email.isEmpty() || password.isEmpty()) {
-              //  binding.errorTextView.text = "E-mail e senha são obrigatórios!"
-                //binding.errorTextView.visibility = View.VISIBLE
-            //} else if (!isValidEmail(email)) {
-              //  binding.errorTextView.text = "E-mail inválido!"
-                //binding.errorTextView.visibility = View.VISIBLE
-            //} else {
-                //binding.errorTextView.visibility = View.GONE
-                //performLogin(email, password)
-            }
+            doLogin()
         }
+    }
+
+    private fun doLogin() = lifecycleScope.launch {
+        val email = binding.emailEditText.text.toString()
+        val password = binding.senhaEditText.text.toString()
+
+        try {
+            val result = auth.signInWithEmailAndPassword(email, password).await()
+            val currentUser = result.user
+
+            if (currentUser != null) {
+                Toast.makeText(
+                    requireContext(),
+                    "Olá ${currentUser.displayName}!",
+                    Toast.LENGTH_LONG
+                ).show()
+                findNavController().navigate(R.id.fragment_sign_up)
+            } else {
+                Toast.makeText(
+                    requireContext(),
+                    "Não foi possível fazer o login",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        } catch (ex: Exception) {
+            Toast.makeText(
+                requireContext(),
+                ex.message,
+                Toast.LENGTH_LONG
+            ).show()
+        }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
