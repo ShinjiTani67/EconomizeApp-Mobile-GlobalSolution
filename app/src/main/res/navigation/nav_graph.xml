@@ -33,10 +33,13 @@
 
     <fragment
         android:id="@+id/fragment_results"
-        android:name="com.example.economizeapp_mobile.HomeFragment"
+        android:name="com.example.economizeapp_mobile.ResultsFragment"
         android:label="Fragment_results" >
         <argument
-            android:name="resultado"
+            android:name="resultadoKwh"
+            app:argType="string" />
+        <argument
+            android:name="resultadoGastos"
             app:argType="string" />
     </fragment>
 

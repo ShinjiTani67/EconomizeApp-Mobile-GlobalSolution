@@ -7,9 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.economizeapp_mobile.databinding.FragmentResultsBinding
 
-
-//todo abrir quando calcular no home
-
 class ResultsFragment : Fragment() {
 
     private var _binding : FragmentResultsBinding? = null
@@ -34,9 +31,12 @@ class ResultsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val resultado = arguments?.getString("calculationResult") ?: "Resultado não encontrado"
+        val resultadoKwh = arguments?.let { ResultsFragmentArgs.fromBundle(it).resultadoKwh }
+        val resultadoGastos = arguments?.let {ResultsFragmentArgs.fromBundle(it).resultadoGastos }
 
-        binding.resultadokwhTextView.text = resultado
+
+        binding.resultadokwhTextView.text = resultadoKwh
+        binding.resultadogastosTextView.text = resultadoGastos
     }
 
     override fun onDestroy(){
