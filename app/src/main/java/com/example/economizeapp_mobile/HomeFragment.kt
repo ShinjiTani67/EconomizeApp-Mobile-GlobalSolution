@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
+import com.example.economizeapp_mobile.HomeFragmentDirections.Companion.actionHomeFragmentToResultFragment
 import com.example.economizeapp_mobile.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -40,6 +42,7 @@ class HomeFragment : Fragment() {
             val kwhEditText = binding.gastosEditText.text.toString().trim()
             val gastosEditText = binding.pagoEditText.text.toString().trim()
 
+
             if (kwhEditText.isEmpty() || gastosEditText.isEmpty()) {
                 Toast.makeText(requireContext(), "Por favor, preencha ambos os campos.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -57,7 +60,8 @@ class HomeFragment : Fragment() {
                     Gasto em 10 meses: R$ $gastoEm10Meses
                 """.trimIndent()
 
-                Toast.makeText(requireContext(), resultado, Toast.LENGTH_LONG).show()
+                val action = FragmentHomeBinding.actionHomeFragmentToResultFragment(resultado)
+                findNavController().navigate(action)
 
             } catch (e: NumberFormatException) {
                 Toast.makeText(requireContext(), "Por favor, insira números válidos.", Toast.LENGTH_SHORT).show()

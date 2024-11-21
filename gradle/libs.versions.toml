@@ -11,7 +11,7 @@ activity = "1.9.3"
 constraintlayout = "2.2.0"
 navVersion = "2.8.4"
 retrofit = "2.11.0"
-glide = "4.16.0"
+navigationFragment = "2.7.7"
 gms = "4.4.2"
 firebase = "33.5.1"
 
@@ -38,4 +38,5 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navVersion" }
 gms-google-services = { id = "com.google.gms.google-services", version.ref = "gms" }
+navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref ="navigationFragment" }
 

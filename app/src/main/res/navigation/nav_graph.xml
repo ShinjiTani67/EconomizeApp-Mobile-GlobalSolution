@@ -21,4 +21,23 @@
         android:name="com.example.economizeapp_mobile.SignUpFragment"
         android:label="Sign Up"
         tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.economizeapp_mobile.HomeFragment"
+        android:label="Fragment_home">
+        <action
+            android:id="@+id/actionHomeFragmentToResultFragment"
+            app:destination="@id/fragment_results" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_results"
+        android:name="com.example.economizeapp_mobile.HomeFragment"
+        android:label="Fragment_results" >
+        <argument
+            android:name="resultado"
+            app:argType="string" />
+    </fragment>
+
 </navigation>

@@ -14,6 +14,7 @@ class ResultsFragment : Fragment() {
 
     private var _binding : FragmentResultsBinding? = null
     private val binding get() = _binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -33,7 +34,7 @@ class ResultsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val result = arguments?.getString("calculationResult") ?: "Resultado não encontrado"
+        val resultado = arguments?.getString("calculationResult") ?: "Resultado não encontrado"
 
         binding.resultadoTextView.text = result
     }
