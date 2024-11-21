@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:236405048183:android:6afad65403b05954109772",
         "android_client_info": {
-          "package_name": "exacom.mple.economizeapp_mobile"
+          "package_name": "com.example.economizeapp_mobile"
         }
       },
       "oauth_client": [],
