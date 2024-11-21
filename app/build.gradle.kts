@@ -2,11 +2,12 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.androidx.navigation.safeargs.kotlin)
+    alias(libs.plugins.gms.google.services)
 }
 
 android {
     namespace = "com.example.economizeapp_mobile"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.economizeapp_mobile"
@@ -54,4 +55,9 @@ dependencies {
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 }

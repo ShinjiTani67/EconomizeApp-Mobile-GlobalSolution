@@ -10,15 +10,25 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.economizeapp_mobile.databinding.FragmentHomeBinding
 import com.example.economizeapp_mobile.databinding.FragmentLoginBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginFragment : Fragment() {
 
+    private lateinit var auth: FirebaseAuth
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        auth = FirebaseAuth.getInstance()
         }
+
+    override fun onStart() {
+        super.onStart()
+        if (auth.currentUser != null) {
+            findNavController().navigate(R.id.fragment_login)
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
