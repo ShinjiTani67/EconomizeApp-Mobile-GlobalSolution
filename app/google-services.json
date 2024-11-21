@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "236405048183",
+    "project_id": "economizeapp-de509",
+    "storage_bucket": "economizeapp-de509.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236405048183:android:6afad65403b05954109772",
+        "android_client_info": {
+          "package_name": "exacom.mple.economizeapp_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM8MOaQpEsNR_1bRmrC1-1Ynwi4aI9tb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
